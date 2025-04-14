@@ -4,8 +4,8 @@ public class Kaart  {
 
 	
 boolean inchecken = false;		
-boolean geldig = false;
-double saldo = 0.0;
+boolean geldig = true;
+double saldo = 5.00;
 
 
 	}

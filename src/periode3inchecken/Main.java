@@ -7,6 +7,9 @@ public class Main  {
 		Kaart kaart = new Kaart();
 		Poort poort = new Poort();
 		
+		poort.inchecken(kaart);
+		poort.uitchecken(kaart);
+		
 
 	}
 

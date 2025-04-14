@@ -2,8 +2,7 @@ package periode3inchecken;
 
 public class Poort {
     private double instaptarief = 1.80;
- 
-   
+    
     public double getInstaptarief() {
         return instaptarief;
     }
@@ -11,7 +10,7 @@ public class Poort {
     public boolean inchecken(Kaart kaart) {
         if (kaart.geldig && kaart.saldo >= instaptarief) {
             kaart.inchecken = true;
-            kaart.saldo -= instaptarief;
+            kaart.saldo -= instaptarief;  
             System.out.println("Ingecheckt via poort. Nieuw saldo: €" + kaart.saldo);
             return true;
         } else {
@@ -19,11 +18,4 @@ public class Poort {
             return false;
         }
     }
-    
-    public boolean uitchecken (Kaart kaart) {
-    	if (kaart.geldig && kaart.saldo >= instaptarief) {
-    		x
-    	}
-    }
-    
 }

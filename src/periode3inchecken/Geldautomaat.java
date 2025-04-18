@@ -20,19 +20,19 @@ public class Geldautomaat {
             return;
         }
  
-        if (!ingevoerdeKaart.geldig) {
+        if (!ingevoerdeKaart.werkend) {
             System.out.println("Kaart is ongeldig.");
             return;
         }
  
-        if (gewenstSaldo <= ingevoerdeKaart.saldo) {
-            System.out.println("Saldo is al €" + ingevoerdeKaart.saldo + " of hoger. Geen opwaardering nodig.");
+        if (gewenstSaldo <= ingevoerdeKaart.krediet) {
+            System.out.println("Saldo is al €" + ingevoerdeKaart.krediet + " of hoger. Geen opwaardering nodig.");
             return;
         }
  
-        double verschil = gewenstSaldo - ingevoerdeKaart.saldo;
-        ingevoerdeKaart.saldo += verschil;
-        System.out.println("Saldo opgewaardeerd tot €" + gewenstSaldo + ". Nieuw saldo: €" + ingevoerdeKaart.saldo);
+        double verschil = gewenstSaldo - ingevoerdeKaart.krediet;
+        ingevoerdeKaart.krediet += verschil;
+        System.out.println("Saldo opgewaardeerd tot €" + gewenstSaldo + ". Nieuw saldo: €" + ingevoerdeKaart.krediet);
     }
 }
 

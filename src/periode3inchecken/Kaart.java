@@ -4,8 +4,8 @@ public class Kaart  {
 
 	
     boolean inchecken = false;
-    boolean geldig = true;
-    double saldo = 20.00;
+    boolean werkend = true;
+    double krediet = 20.00;
  
     
     public double getInstaptarief() {
